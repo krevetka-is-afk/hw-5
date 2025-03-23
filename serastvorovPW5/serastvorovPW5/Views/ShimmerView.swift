@@ -69,7 +69,6 @@ class ShimmerView: UIView {
     }
     
     func stopShimmering() {
-        // Останавливаем анимацию
         gradientLayer.removeAnimation(forKey: "shimmer")
     }
 } 
