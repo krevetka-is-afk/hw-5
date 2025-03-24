@@ -25,6 +25,7 @@ class ArticleDetailViewController: UIViewController {
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.numberOfLines = 0
         label.textAlignment = .center
+        label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -34,6 +35,8 @@ class ArticleDetailViewController: UIViewController {
         textView.font = UIFont.systemFont(ofSize: 16)
         textView.isEditable = false
         textView.isSelectable = true
+        textView.backgroundColor = .systemBackground
+        textView.textColor = .label
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
     }()
@@ -50,7 +53,7 @@ class ArticleDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         setupUI()
         configure()
     }
